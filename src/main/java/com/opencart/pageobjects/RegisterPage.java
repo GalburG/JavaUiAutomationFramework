@@ -25,6 +25,9 @@ public class RegisterPage extends Page {
     @FindBy(xpath = "//button[normalize-space()='Continue']")
     private WebElement continueButton;
 
+    @FindBy(xpath = "//div[@id='alert']")
+    private WebElement closeAlert;
+
 
     public RegisterPage(WebDriver driver) {
         super(driver);
@@ -44,15 +47,18 @@ public class RegisterPage extends Page {
         System.out.println("The entered password is " + password);
     }
 
-    public void switchONTheAggrementsToggle() {
+    public void switchONTheAgreementsToggle() {
+
         agreementsToggle.click();
     }
 
-    public void clickOnContinueButton(){
+    public void clickOnContinueButton() {
         continueButton.click();
     }
 
-
+    public void clickOnCloseAlert() {
+        closeAlert.click();
+    }
 
 
 }

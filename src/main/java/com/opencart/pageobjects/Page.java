@@ -11,7 +11,7 @@ public abstract class Page {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//div[@class='nav float-end']//i[@class='fa-solid fa-caret-down']")
+    @FindBy(xpath = "//i[@class='fa-solid fa-user']")
     protected WebElement accountIconDropDown;
     @FindBy(xpath = "//a[normalize-space()='Register']")
     protected WebElement registerButton;
