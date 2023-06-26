@@ -26,7 +26,7 @@ public class TestRunner {
 
             RegisterPage registerPage = new RegisterPage(driver);
             registerPage.fillInTheRegisterForm(firstName, lastName, email, password);
-            registerPage.switchONTheAggrementsToggle();
+            registerPage.switchONTheAgreementsToggle();
             registerPage.clickOnContinueButton();
             Thread.sleep(2000);
 
